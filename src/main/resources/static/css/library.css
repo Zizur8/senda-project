@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html, body {
+  height: 100%;
+
+}
+main{
+    width: 100%;
+    height: 100%;
+    margin: 20px 20px;
+}
+header{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    background: #6c5d59;
+}
+header .nav-actions{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    margin: 20px;
+
+
+}
+.nav-actions #last-update-book{
+    color: #eee9e9;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.info-nav-actions{
+    margin: 5px;
+}
+.senda-vs{
+
+    margin: 20px;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3em;
+    color: aliceblue;
+}
+.button-action{
+    width: 80px;
+    height: 50%;
+    padding: 5px;
+    border-radius:5px;
+}
+
+.cardBook{
+
+    width: 20%;
+    height: 40%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background: #eee9e9;
+
+}
+.titleBook{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    color: rgb(46, 40, 32);
+}
+.imageBook{
+    width: 50%;
+    height: 20%;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    
+    border-radius: 10px;
+}
+
+
+#container-form-book{
+    width: 100%;
+    border: solid 1px;
+}
+#form-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 50%;
+    border: solid 1px;
+    
+}
