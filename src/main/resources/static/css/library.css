@@ -48,9 +48,9 @@ header .nav-actions{
     color: aliceblue;
 }
 .button-action{
-    width: 80px;
+    width: auto;
     height: 50%;
-    padding: 5px;
+    padding: 8px;
     border-radius:5px;
 }
 
