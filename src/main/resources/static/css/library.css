@@ -84,16 +84,15 @@ header .nav-actions{
 }
 
 
-#container-form-book{
-    width: 100%;
-    border: solid 1px;
-}
 #form-content{
+    width: 50%;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    justify-items: center;
+    align-items: center;
 
-    width: 50%;
     border: solid 1px;
+    padding: 20px;
     
 }
