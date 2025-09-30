@@ -1,79 +1,124 @@
 <!DOCTYPE html>
 <html lang="es" xmlns:th="http://www.thymeleaf.org">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" th:href="@{/css/library.css}" />
 
-    <title>Senda</title>
-  </head>
-  <body>
-    <header>
-      <h1 class="senda-vs">SendaVS</h1>
-      <div class="nav-actions">
-        <p class="info-nav-actions" id="last-update-book">
-          Ultimo libro guardado: La peste Albert Camus 05/03/2025
-        </p>
-        <div id="buttons-actions">
-          <button class="info-nav-actions button-action" id="addBook" value="">
-            Agregar
-          </button>
-          <button
-            class="info-nav-actions button-action"
-            id="deleteBook"
-            value=""
-          >
-            Eliminar
-          </button>
-          <button
-            class="info-nav-actions button-action"
-            id="settings"
-            value=""
-          >
-            Configuración
-          </button>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" th:href="@{/css/library.css}" />
+
+  <title>Senda</title>
+</head>
+
+<body>
+
+  <header>
+    <h1 class="senda-vs">SendaVS</h1>
+
+
+    <div id="search-container">
+      <div class="search-box">
+        <input type="text" id="search-input" placeholder="Buscar Libro...">
+        <span class="search-icon">&#128269;</span>
       </div>
-    </header>
+    </div>
+    <p class="info-nav-actions" id="last-update-book">
+      Ultimo libro guardado: La peste Albert Camus 05/03/2025
+    </p>
+  </header>
 
-    <main>
-      <div id="container-cards"></div>
-      
-        <div id="form-content">
-          <h2>Nuevo Libro</h2>
-          <label for="">Titulo</label>
-          <input type="text" name="" id="" />
-          <label for="">Autor</label>
-          <input type="text" />
-          <label for="">Parrafo o frases favoritas</label>
-          <textarea name="" id=""></textarea>
-          <label for="">Kant. Pag</label>
-          <input type="number" name="" id="" />
+  <main>
+    <div id="container-cards"></div>
 
-          <button>Guardar</button>
-        </div>
-    </main>
-
-    <footer></footer>
-
-    <template id="cardBook-template">
-      <div class="cardBook">
-        <img
-          class="imageBook"
-          src="/images/senda_del_perdedor.webp"
-          alt="senda_del_perdedor"
-        />
-        <h3 class="titleBook">La senda del perdedor</h3>
-        <h4>Charles Bukowski</h4>
-        <p class="favoritePhraseBook">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis
-          dolor maxime, omnis repudiandae, culpa fugiat accusantium incidunt
-          magnam architecto voluptates similique a voluptate veniam! Suscipit
-          consequuntur totam ea voluptatem magnam!
-        </p>
+    <div id="container-actions-buttons">
+      <div id="actions-buttons">
+        <button class="info-nav-actions button-action" id="addBook" value="">
+          Agregar
+        </button>
+        <button class="info-nav-actions button-action" id="deleteBook" value="">
+          Eliminar
+        </button>
+        <button class="info-nav-actions button-action" id="settings" value="">
+          Configuración
+        </button>
       </div>
-    </template>
+    </div>
 
-    <script th:src="@{/js/library.js}"></script>
-  </body>
+
+    </div>
+
+
+  </main>
+
+  <footer></footer>
+
+  <template id="cardBook-template">
+    <div class="cardBook">
+
+      <div class="info-card-book">
+
+        <div class="top-card">
+          <div>
+            <h3 class="titleBook">La senda del perdedor</h3>
+            <h4>Charles Bukowski</h4>
+          </div>
+          <div>
+            <div><button>❤️</button></div>
+          </div>
+        </div>
+
+
+        <div class="center-card">
+
+          <div class="center-content-card">
+
+            <div class="image-card">
+              <img class="imageBook" src="/images/senda_del_perdedor.webp" alt="senda_del_perdedor" />
+            </div>
+
+            
+
+          </div>
+
+          <div class="favoritePhrase-card">
+            <p><b>Nota Favorita</b></p>
+            <p class="">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Perspiciatis dolor maxime, omnis repudiandae, culpa fugiat
+              accusantium incidunt magnam architecto voluptates similique a
+              voluptate veniam! Suscipit consequuntur totam ea voluptatem magnam!
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="footer-card">
+          <span>Pags.356</span>
+          <span>Costo: $399</span>
+          <span>Terminado: 09/Sep/2025</span>
+        </div>
+
+      </div>
+    </div>
+  </template>
+
+  <template id="form-new-book">
+    <div id="form-content">
+      <h2>Nuevo Libro</h2>
+      <label for="">Titulo</label>
+      <input type="text" name="" id="" />
+      <label for="">Autor</label>
+      <input type="text" />
+      <label for="">Parrafo o frases favoritas</label>
+      <textarea name="" id=""></textarea>
+      <label for="">Kant. Pag</label>
+      <input type="number" name="" id="" />
+
+      <button>Guardar</button>
+    </div>
+  </template>
+
+  <script th:src="@{/js/library.js}"></script>
+</body>
+
 </html>
