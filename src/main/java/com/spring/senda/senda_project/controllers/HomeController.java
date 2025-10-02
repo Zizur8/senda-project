@@ -7,16 +7,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 
 @Controller
-@RequestMapping("/library")
-public class BookController {
+@RequestMapping("/index")
+public class HomeController {
 
     @GetMapping
     public String homePage(Model model) {
         model.addAttribute("Titulo", "Senda");
-        return "library";
+        return "index";
     }
     
     
 }
-
-
