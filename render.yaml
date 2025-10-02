@@ -7,3 +7,5 @@ services:
     startCommand: java -jar target/libreria-0.0.1-SNAPSHOT.jar
     envVars:
       SPRING_PROFILES_ACTIVE: prod
+      
+      
