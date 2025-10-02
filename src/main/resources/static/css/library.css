@@ -126,17 +126,88 @@ header{
 }
 /*-----------------------*/
 
-#form-content{
+#form-addBook-content{
+
+    position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centrado exacto */
+
     width: 50%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
+    height: 70%;
+
+    background-color: #eee9e9;
+
+    display: grid;
+
+
+    grid-template-rows: 10% auto 10%;
 
     border: solid 1px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
     padding: 20px;
-    
+
+
+    z-index: 1000;
+}
+
+#form-addBook-header{
+    width: 100%;
+
+    padding: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+
+}
+
+#form-addBook-body{
+
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding: 0 3% 0 3%;
+    grid-template-columns: repeat(2, 1fr);
+
+    #form-addBook-left{
+        height: 100%;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 1.5em;
+        border-right: solid 1px black;
+    }
+
+    #form-addBook-right{
+        height: 100%;
+        width: 100%;
+                display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+#form-addBook-footer{
+    width: 100%;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .titleBook{
@@ -220,6 +291,17 @@ header{
 
 }
 
+#closeFormNewBook{
+    width: 50px;
+    height: 50%;
+    border: none;
+    border-radius: 20px;
+        margin: 5px;
+    padding: 8px 15px;
+    background-color: #926c6c;
+    padding: 8px;
+    border-radius:5px;
+}
 .button-action{
     width: auto;
     height: 50%;
@@ -227,3 +309,45 @@ header{
     border-radius:5px;
 }
 
+.button-style{
+    background: #ac977c;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 5px;
+    padding: 8px 15px;
+    width: 150px;
+}
+
+
+#img-cover-preview{
+    width: 80%;
+    height: 90%;
+
+
+    background: #926c6c;
+    border-radius: 10px;
+
+}
+
+.input-style{
+
+    padding: 2px 5px;
+    border: solid 1px #888;
+    border-radius: 10px;
+    width: 60%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 0.7em; 
+        font-style: italic;   
+
+    
+    .input-text{
+
+    }
+    .input-radio{
+        width: 10%;
+        height: 10%;
+    }
+}
