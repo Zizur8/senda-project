@@ -8,4 +8,5 @@ services:
     envVars:
       SPRING_PROFILES_ACTIVE: prod
       
-      
+
+
