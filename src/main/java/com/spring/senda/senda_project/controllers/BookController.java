@@ -12,9 +12,10 @@ public class BookController {
 
     @GetMapping
     public String homePage(Model model) {
-        model.addAttribute("Titulo", "Senda");
+        model.addAttribute("Titulo", "Sendaaaaa");
         return "library";
     }
+    
     
     
 }
